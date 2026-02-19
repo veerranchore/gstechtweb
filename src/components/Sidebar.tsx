@@ -23,7 +23,7 @@ const Sidebar: React.FC = () => {
             </div>
 
             <nav className="flex-1 px-4 py-4 space-y-1 overflow-y-auto sidebar-scroll">
-                {navItems.map((item, index) => (
+                {navItems.map((item) => (
                     <motion.a
                         key={item.label}
                         whileHover={{ x: 4 }}

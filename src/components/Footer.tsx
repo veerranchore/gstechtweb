@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const Footer: React.FC = () => {
-    const year = new Date().getFullYear();
-
     return (
         <footer className="bg-black text-white relative overflow-hidden border-t border-white/10">
             {/* Main Footer Grid */}

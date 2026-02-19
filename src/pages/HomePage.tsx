@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/swiper-bundle.css';
+
 
 const HomePage: React.FC = () => {
     // Scroll Animations
@@ -143,48 +141,6 @@ const HomePage: React.FC = () => {
                 </div>
             </section>
 
-            {/* ── SECTION DIFFERENCE 4: THE DARK IMMERSIVE PORTFOLIO ── */}
-            {/* <section className="py-24 lg:py-32 px-6 bg-navy relative border-t border-white/5">
-                <div className="max-w-7xl mx-auto mb-20">
-                    <div className="flex flex-col items-center text-center space-y-6">
-                        <span className="font-mono text-[10px] text-orange tracking-[0.5em] font-bold uppercase underline decoration-orange/20 decoration-2 underline-offset-8">Selected Missions</span>
-                        <h2 className="text-5xl lg:text-7xl font-display leading-none tracking-tighter italic opacity-90">THE ARCHIVE.</h2>
-                    </div>
-                </div>
-
-                <div className="max-w-[1500px] mx-auto">
-                    <Swiper
-                        modules={[Pagination, Autoplay]}
-                        spaceBetween={30}
-                        slidesPerView={1.05}
-                        centeredSlides={true}
-                        loop={true}
-                        autoplay={{ delay: 5000 }}
-                        pagination={{ clickable: true }}
-                        className="portfolio-swiper-premium pb-24"
-                    >
-                        {[
-                            { title: 'FINTRACK PRO', sub: 'ECOSYSTEM / 2024', img: 'https://images.unsplash.com/photo-1551288049-bbbda5366391?auto=format&fit=crop&q=80&w=1600' },
-                            { title: 'MEDCORE HUB', sub: 'DATAVIZ / 2024', img: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1600' },
-                            { title: 'FLEET OPS', sub: 'LOGISTICS / 2023', img: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1600' },
-                        ].map((work, i) => (
-                            <SwiperSlide key={i}>
-                                <div className="relative aspect-video lg:aspect-[21/9] w-full rounded-[3rem] lg:rounded-[4rem] overflow-hidden group border border-white/10 shadow-2xl">
-                                    <img src={work.img} className="absolute inset-0 w-full h-full object-cover grayscale transition-all duration-[3s] group-hover:grayscale-0 group-hover:scale-110" alt={work.title} />
-                                    <div className="absolute inset-x-0 bottom-0 top-1/2 bg-gradient-to-t from-navy to-transparent" />
-                                    <div className="absolute bottom-10 lg:bottom-16 left-10 lg:left-16 text-white">
-                                        <span className="font-mono text-[10px] text-orange tracking-[0.8em] font-black mb-6 block uppercase">{work.sub}</span>
-                                        <h3 className="text-4xl lg:text-7xl font-display leading-none tracking-tighter group-hover:italic transition-all duration-1000 uppercase">{work.title}</h3>
-                                    </div>
-                                    <div className="absolute top-10 right-10 lg:top-16 lg:right-16 w-16 h-16 rounded-full glass border border-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-700 hover:bg-orange hover:border-orange">
-                                        <span className="material-symbols-outlined text-3xl text-white">north_east</span>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
-                </div>
-            </section> */}
         </div>
     );
 };

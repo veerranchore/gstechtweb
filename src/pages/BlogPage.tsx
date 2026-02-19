@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
+
 
 const categories = ['All', 'Engineering', 'Design', 'Product', 'AI/ML'];
 
@@ -87,8 +87,8 @@ const BlogPage: React.FC = () => {
                         { name: 'INTERFACE R&D', count: '09 Articles', icon: 'auto_awesome_motion' },
                         { name: 'PRODUCT OPS', count: '12 Articles', icon: 'hub' },
                         { name: 'AI FRONTIERS', count: '06 Articles', icon: 'psychology' }
-                    ].map((cat, i) => (
-                        <div key={i} className="p-10 border border-white/5 bg-white/[0.02] flex flex-col justify-between min-h-[250px] hover:bg-orange transition-all duration-500 cursor-pointer group">
+                    ].map((cat) => (
+                        <div key={cat.name} className="p-10 border border-white/5 bg-white/[0.02] flex flex-col justify-between min-h-[250px] hover:bg-orange transition-all duration-500 cursor-pointer group">
                             <span className="material-symbols-outlined text-3xl text-orange group-hover:text-white transition-colors">{cat.icon}</span>
                             <div className="space-y-4">
                                 <h3 className="text-2xl font-display leading-none tracking-widest uppercase italic">{cat.name}</h3>
@@ -128,7 +128,7 @@ const BlogPage: React.FC = () => {
             <section className="px-6 py-24 lg:py-32 bg-white">
                 <div className="max-w-[1500px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-14">
                     <AnimatePresence mode='wait'>
-                        {filteredPosts.map((post, i) => (
+                        {filteredPosts.map((post) => (
                             <article key={post.id} className="group flex flex-col gap-8 hover:bg-[#FAFAF7] p-8 rounded-[3rem] transition-all duration-700 cursor-pointer border border-transparent hover:border-black/5">
                                 <div className="relative overflow-hidden rounded-[2.5rem] grayscale group-hover:grayscale-0 transition-all duration-1000 aspect-[5/4] shadow-2xl">
                                     <img src={post.img} className="w-full h-full object-cover transition-transform duration-[3s] group-hover:scale-110" alt={post.title} />

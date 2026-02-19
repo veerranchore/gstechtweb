@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const ServicesPage: React.FC = () => {
-    const { scrollY } = useScroll();
-    const ySection1 = useTransform(scrollY, [0, 1000], [0, -50]);
-    const rotateSection = useTransform(scrollY, [500, 1500], [0, 2]);
+
 
     return (
         <div className="bg-navy text-white overflow-hidden">

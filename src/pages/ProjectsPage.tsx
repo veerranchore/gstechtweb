@@ -97,7 +97,7 @@ const ProjectsPage: React.FC = () => {
                 <div className="max-w-[1600px] mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14">
                         <AnimatePresence mode='popLayout'>
-                            {filtered.map((proj, i) => (
+                            {filtered.map((proj) => (
                                 <motion.div
                                     key={proj.id}
                                     layout
