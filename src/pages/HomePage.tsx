@@ -9,8 +9,7 @@ import RollReveal from '@/components/RollReveal';
 const HomePage: React.FC = () => {
     // Scroll Animations
     const { scrollY } = useScroll();
-    const yHeroImagesL = useTransform(scrollY, [0, 800], [0, -80]);
-    const yHeroImagesR = useTransform(scrollY, [0, 800], [0, 80]);
+
     const xLargeText = useTransform(scrollY, [0, 2000], [0, -200]);
 
     return (
