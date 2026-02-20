@@ -7,9 +7,12 @@ import CareersPage from '@/pages/CareersPage';
 import ContactPage from '@/pages/ContactPage';
 import ScrollToTop from '@/components/ScrollToTop';
 
+import CustomCursor from '@/components/Cursor';
+
 function App() {
   return (
     <BrowserRouter>
+      <CustomCursor />
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>

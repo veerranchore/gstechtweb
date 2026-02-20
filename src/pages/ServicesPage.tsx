@@ -38,17 +38,23 @@ const ServicesPage: React.FC = () => {
                         transition={{ duration: 1, delay: 0.2 }}
                         className="relative hidden lg:block"
                     >
-                        <div className="aspect-square w-full rounded-[4rem] border border-white/5 bg-white/[0.02] flex items-center justify-center p-20 relative">
-                            <div className="absolute inset-0 animate-pulse bg-orange/5 rounded-full blur-3xl" />
-                            <span className="material-symbols-outlined text-[10rem] text-orange/20 select-none">settings_suggest</span>
-                            <div className="absolute top-10 right-10 bg-navy border border-white/10 px-8 py-4 rounded-full font-mono text-[10px] tracking-widest text-orange italic">UNIT_04_ACTIVE</div>
+                        <div className="aspect-square w-full rounded-[4rem] overflow-hidden border border-white/10 relative group">
+                            <div className="absolute inset-0 bg-navy/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
+                            <img
+                                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200"
+                                alt="Services Command Center"
+                                className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700 ease-out"
+                            />
+                            <div className="absolute bottom-10 right-10 z-20 bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 rounded-full">
+                                <span className="font-mono text-[10px] tracking-widest text-white uppercase">SYSTEM_ACTIVE</span>
+                            </div>
                         </div>
                     </motion.div>
                 </div>
             </section>
 
             {/* ── INNOVATION GRID ── */}
-            <section className="py-24 lg:py-40 px-6 bg-[#FAFAF7] text-navy lg:rounded-[6rem] mx-0 lg:mx-6 my-16 relative z-10 shadow-[0_20px_100px_rgba(0,0,0,0.2)] overflow-hidden">
+            <section className="py-24 lg:py-40 px-6 bg-[#E5F9F8] text-navy lg:rounded-[6rem] mx-0 lg:mx-6 my-16 relative z-10 shadow-[0_20px_100px_rgba(0,0,0,0.2)] overflow-hidden">
                 <div className="max-w-7xl mx-auto relative z-10">
                     <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-24 gap-10">
                         <div className="space-y-6">

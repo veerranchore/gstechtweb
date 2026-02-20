@@ -80,7 +80,7 @@ const BlogPage: React.FC = () => {
             </section>
 
             {/* ── STREAMS ── */}
-            <section className="py-24 lg:py-32 px-6 bg-[#0A0F1E] text-white">
+            <section className="py-24 lg:py-32 px-6 bg-[#1F2B2D] text-white">
                 <div className="max-w-[1500px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {[
                         { name: 'ENGINEERING', count: '14 Articles', icon: 'settings_ethernet' },
@@ -100,7 +100,7 @@ const BlogPage: React.FC = () => {
             </section>
 
             {/* ── FEATURED ── */}
-            <section className="px-6 py-24 lg:py-40 bg-[#FAFAF7] border-b-[3px] border-navy/10 relative overflow-hidden">
+            <section className="px-6 py-24 lg:py-40 bg-[#E5F9F8] border-b-[3px] border-navy/10 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
                         <div className="lg:col-span-8 group cursor-pointer relative rounded-[3rem] overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.15)] border-[10px] border-white">
@@ -129,7 +129,7 @@ const BlogPage: React.FC = () => {
                 <div className="max-w-[1500px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-14">
                     <AnimatePresence mode='wait'>
                         {filteredPosts.map((post) => (
-                            <article key={post.id} className="group flex flex-col gap-8 hover:bg-[#FAFAF7] p-8 rounded-[3rem] transition-all duration-700 cursor-pointer border border-transparent hover:border-black/5">
+                            <article key={post.id} className="group flex flex-col gap-8 hover:bg-[#E5F9F8] p-8 rounded-[3rem] transition-all duration-700 cursor-pointer border border-transparent hover:border-black/5">
                                 <div className="relative overflow-hidden rounded-[2.5rem] grayscale group-hover:grayscale-0 transition-all duration-1000 aspect-[5/4] shadow-2xl">
                                     <img src={post.img} className="w-full h-full object-cover transition-transform duration-[3s] group-hover:scale-110" alt={post.title} />
                                 </div>

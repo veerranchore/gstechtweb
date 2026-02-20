@@ -24,7 +24,7 @@ const testimonials = [
 
 const Testimonials: React.FC = () => {
     return (
-        <section id="about" className="bg-[#0A0F1E] py-32">
+        <section id="about" className="bg-[#1F2B2D] py-32">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <motion.div
@@ -36,7 +36,7 @@ const Testimonials: React.FC = () => {
                     <div>
                         <div className="flex items-center gap-3 mb-4">
                             <span className="orange-line"></span>
-                            <span className="font-mono-custom text-xs text-[#FF4D00] tracking-widest uppercase">Client Voices</span>
+                            <span className="font-mono-custom text-xs text-[#12B2C1] tracking-widest uppercase">Client Voices</span>
                         </div>
                         <h2 className="font-display text-[clamp(3.5rem,7vw,7rem)] leading-none text-white tracking-wide">
                             TRUSTED BY<br />BUILDERS
@@ -56,13 +56,13 @@ const Testimonials: React.FC = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.12 }}
-                            className="group rounded-2xl p-8 border border-white/8 hover:border-[#FF4D00]/40 transition-all duration-300 flex flex-col gap-8"
+                            className="group rounded-2xl p-8 border border-white/8 hover:border-[#12B2C1]/40 transition-all duration-300 flex flex-col gap-8"
                             style={{ background: 'rgba(255,255,255,0.03)' }}
                         >
                             {/* Stars */}
                             <div className="flex gap-1">
                                 {Array.from({ length: 5 }).map((_, si) => (
-                                    <span key={si} className="text-[#FF4D00]">★</span>
+                                    <span key={si} className="text-[#12B2C1]">★</span>
                                 ))}
                             </div>
 
@@ -73,7 +73,7 @@ const Testimonials: React.FC = () => {
 
                             {/* Author */}
                             <div className="flex items-center gap-4 pt-4 border-t border-white/8">
-                                <div className="w-11 h-11 rounded-full bg-[#FF4D00] flex items-center justify-center font-bold text-white text-sm">
+                                <div className="w-11 h-11 rounded-full bg-[#12B2C1] flex items-center justify-center font-bold text-white text-sm">
                                     {t.initials}
                                 </div>
                                 <div>

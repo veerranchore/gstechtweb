@@ -8,8 +8,8 @@ const projects = [
         category: 'Mobile + Backend',
         description: 'AI-powered financial tracking app for 200K+ users across iOS & Android.',
         result: '4.9★ App Store',
-        color: '#0A0F1E',
-        accent: '#FF4D00',
+        color: '#1F2B2D',
+        accent: '#12B2C1',
         tags: ['React Native', 'Node.js', 'MongoDB'],
     },
     {
@@ -18,7 +18,7 @@ const projects = [
         category: 'Healthcare SaaS',
         description: 'Enterprise patient management system serving 5,000+ medical practitioners successfully.',
         result: '3M+ Records',
-        color: '#FF4D00',
+        color: '#12B2C1',
         accent: '#fff',
         tags: ['Next.js', 'PostgreSQL', 'AWS'],
     },
@@ -28,8 +28,8 @@ const projects = [
         category: 'Logistics & IoT',
         description: 'Real-time fleet dispatch platform with live GPS tracking across 50+ cities.',
         result: '50+ Cities',
-        color: '#F8F4EE',
-        accent: '#0A0F1E',
+        color: '#E5F9F8',
+        accent: '#1F2B2D',
         tags: ['Flutter', 'GraphQL', 'Firebase'],
     },
     {
@@ -38,8 +38,8 @@ const projects = [
         category: 'EdTech Platform',
         description: 'Live-streaming learning platform with AI tutoring and adaptive quizzes.',
         result: '500K Students',
-        color: '#0A0F1E',
-        accent: '#FF4D00',
+        color: '#1F2B2D',
+        accent: '#12B2C1',
         tags: ['React', 'WebRTC', 'Python AI'],
     },
 ];
@@ -58,13 +58,13 @@ const Projects: React.FC = () => {
                     <div>
                         <div className="flex items-center gap-3 mb-4">
                             <span className="orange-line"></span>
-                            <span className="font-mono-custom text-xs text-[#FF4D00] tracking-widest uppercase">Selected Work</span>
+                            <span className="font-mono-custom text-xs text-[#12B2C1] tracking-widest uppercase">Selected Work</span>
                         </div>
-                        <h2 className="font-display text-[clamp(3.5rem,7vw,7rem)] leading-none text-[#0A0F1E] tracking-wide">
+                        <h2 className="font-display text-[clamp(3.5rem,7vw,7rem)] leading-none text-[#1F2B2D] tracking-wide">
                             CASE<br />STUDIES
                         </h2>
                     </div>
-                    <a href="#" className="flex items-center gap-2 text-sm font-bold text-[#6B7280] hover:text-[#FF4D00] transition-colors">
+                    <a href="#" className="flex items-center gap-2 text-sm font-bold text-[#23717B] hover:text-[#12B2C1] transition-colors">
                         View all projects
                         <span className="material-symbols-outlined text-base">arrow_forward</span>
                     </a>
@@ -112,7 +112,7 @@ const Projects: React.FC = () => {
                                     <div>
                                         <p
                                             className="font-mono-custom text-xs uppercase tracking-widest mb-2"
-                                            style={{ color: proj.accent === '#fff' ? 'rgba(255,255,255,0.5)' : '#6B7280' }}
+                                            style={{ color: proj.accent === '#fff' ? 'rgba(255,255,255,0.5)' : '#23717B' }}
                                         >
                                             {proj.category}
                                         </p>
@@ -136,7 +136,7 @@ const Projects: React.FC = () => {
 
                                 <p
                                     className="text-sm leading-relaxed mb-6"
-                                    style={{ color: proj.accent === '#fff' ? 'rgba(255,255,255,0.6)' : '#6B7280' }}
+                                    style={{ color: proj.accent === '#fff' ? 'rgba(255,255,255,0.6)' : '#23717B' }}
                                 >
                                     {proj.description}
                                 </p>
@@ -147,7 +147,7 @@ const Projects: React.FC = () => {
                                             key={tag}
                                             className="px-3 py-1 rounded-full font-mono-custom text-[10px] border"
                                             style={{
-                                                color: proj.accent === '#fff' ? 'rgba(255,255,255,0.6)' : '#6B7280',
+                                                color: proj.accent === '#fff' ? 'rgba(255,255,255,0.6)' : '#23717B',
                                                 borderColor: proj.accent === '#fff' ? 'rgba(255,255,255,0.15)' : 'rgba(10,15,30,0.12)',
                                             }}
                                         >

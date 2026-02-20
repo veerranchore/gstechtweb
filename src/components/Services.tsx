@@ -48,7 +48,7 @@ const services = [
 
 const Services: React.FC = () => {
     return (
-        <section id="services" className="bg-[#FAFAF7] py-32">
+        <section id="services" className="bg-[#E5F9F8] py-32">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <motion.div
@@ -60,13 +60,13 @@ const Services: React.FC = () => {
                     <div>
                         <div className="flex items-center gap-3 mb-4">
                             <span className="orange-line"></span>
-                            <span className="font-mono-custom text-xs text-[#FF4D00] tracking-widest uppercase">What We Do</span>
+                            <span className="font-mono-custom text-xs text-[#12B2C1] tracking-widest uppercase">What We Do</span>
                         </div>
-                        <h2 className="font-display text-[clamp(3.5rem,7vw,7rem)] leading-none text-[#0A0F1E] tracking-wide">
+                        <h2 className="font-display text-[clamp(3.5rem,7vw,7rem)] leading-none text-[#1F2B2D] tracking-wide">
                             FULL-SPECTRUM<br />TECH SERVICES
                         </h2>
                     </div>
-                    <p className="text-[#6B7280] text-base leading-relaxed max-w-xs">
+                    <p className="text-[#23717B] text-base leading-relaxed max-w-xs">
                         Everything your digital product needs — from idea to massive scale — under one roof.
                     </p>
                 </motion.div>
@@ -84,31 +84,31 @@ const Services: React.FC = () => {
                         >
                             {/* Number */}
                             <div className="md:col-span-1">
-                                <span className="font-mono-custom text-xs text-[#6B7280] group-hover:text-[#FF4D00] transition-colors">{svc.num}</span>
+                                <span className="font-mono-custom text-xs text-[#23717B] group-hover:text-[#12B2C1] transition-colors">{svc.num}</span>
                             </div>
 
                             {/* Icon */}
                             <div className="md:col-span-1">
-                                <div className="w-12 h-12 rounded-xl bg-[#FF4D00]/10 flex items-center justify-center group-hover:bg-[#FF4D00] transition-colors">
-                                    <span className="material-symbols-outlined text-[#FF4D00] group-hover:text-white transition-colors">{svc.icon}</span>
+                                <div className="w-12 h-12 rounded-xl bg-[#12B2C1]/10 flex items-center justify-center group-hover:bg-[#12B2C1] transition-colors">
+                                    <span className="material-symbols-outlined text-[#12B2C1] group-hover:text-white transition-colors">{svc.icon}</span>
                                 </div>
                             </div>
 
                             {/* Title */}
                             <div className="md:col-span-4">
-                                <h3 className="font-display text-3xl text-[#0A0F1E] tracking-wide group-hover:text-[#FF4D00] transition-colors">
+                                <h3 className="font-display text-3xl text-[#1F2B2D] tracking-wide group-hover:text-[#12B2C1] transition-colors">
                                     {svc.title.toUpperCase()}
                                 </h3>
                             </div>
 
                             {/* Description */}
                             <div className="md:col-span-4">
-                                <p className="text-[#6B7280] text-sm leading-relaxed">{svc.desc}</p>
+                                <p className="text-[#23717B] text-sm leading-relaxed">{svc.desc}</p>
                             </div>
 
                             {/* Arrow */}
                             <div className="md:col-span-2 flex flex-wrap gap-2 justify-end items-center">
-                                <span className="material-symbols-outlined text-[#6B7280] group-hover:text-[#FF4D00] group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">
+                                <span className="material-symbols-outlined text-[#23717B] group-hover:text-[#12B2C1] group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">
                                     arrow_outward
                                 </span>
                             </div>

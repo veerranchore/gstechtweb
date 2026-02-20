@@ -11,7 +11,7 @@ const AboutPage: React.FC = () => {
             {/* ── HERO: ARCHITECTURAL MINIMALISM ── */}
             <section className="min-h-[75vh] pt-40 pb-20 px-6 relative flex flex-col justify-center overflow-hidden border-b border-white/5">
                 {/* Background Pattern */}
-                <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#FF4D00 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+                <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#12B2C1 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 
                 <motion.div
                     style={{ y: yHero }}
@@ -45,7 +45,7 @@ const AboutPage: React.FC = () => {
             </section>
 
             {/* ── MANIFESTO ── */}
-            <section className="py-24 lg:py-40 px-6 bg-[#FAFAF7] text-navy lg:rounded-[5rem] mx-0 lg:mx-4 my-10 relative z-10 shadow-2xl overflow-hidden">
+            <section className="py-24 lg:py-40 px-6 bg-[#E5F9F8] text-navy lg:rounded-[5rem] mx-0 lg:mx-4 my-10 relative z-10 shadow-2xl overflow-hidden">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-32 items-start">
                         <div className="lg:col-span-12 mb-16">

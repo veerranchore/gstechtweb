@@ -63,7 +63,7 @@ const ContactPage: React.FC = () => {
             </section>
 
             {/* ── FORM: THE BENTO COMMAND ── */}
-            <section className="py-24 lg:py-40 px-0 lg:px-6 bg-[#FAFAF7] text-navy relative z-10 lg:rounded-[5rem] mx-0 lg:mx-6 my-16 shadow-2xl">
+            <section className="py-24 lg:py-40 px-0 lg:px-6 bg-[#E5F9F8] text-navy relative z-10 lg:rounded-[5rem] mx-0 lg:mx-6 my-16 shadow-2xl">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-px bg-navy/5 border border-navy/5 rounded-[4rem] overflow-hidden shadow-inner">
                     {/* Info Side */}
                     <div className="lg:col-span-4 bg-navy p-12 lg:p-16 text-white space-y-16 relative overflow-hidden">
@@ -194,7 +194,7 @@ const ContactPage: React.FC = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {offices.map(o => (
-                            <div key={o.city} className="p-12 bg-[#FAFAF7] border border-black/5 rounded-[3rem] space-y-10 group hover:bg-navy hover:text-white transition-all duration-700 shadow-xl">
+                            <div key={o.city} className="p-12 bg-[#E5F9F8] border border-black/5 rounded-[3rem] space-y-10 group hover:bg-navy hover:text-white transition-all duration-700 shadow-xl">
                                 <div className="flex justify-between items-start">
                                     <span className="material-symbols-outlined text-5xl text-orange group-hover:rotate-12 transition-transform">{o.icon}</span>
                                     <span className="font-mono text-[8px] text-navy/20 group-hover:text-white/20 tracking-widest">{o.coord}</span>

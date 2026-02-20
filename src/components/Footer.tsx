@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-black text-white relative overflow-hidden border-t border-white/10">
+        <footer className="bg-navy text-white relative overflow-hidden border-t border-white/10">
             {/* Main Footer Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[500px]">
 
@@ -45,8 +45,7 @@ const Footer: React.FC = () => {
                     {[
                         { label: 'INSTAGRAM', link: 'https://www.instagram.com/gstecht_official/' },
                         { label: 'FACEBOOK', link: '#' },
-                        { label: 'LINKEDIN', link: '#' },
-                        { label: 'BEHANCE', link: '#' }
+                        { label: 'LINKEDIN', link: '#' }
                     ].map((social) => (
                         <a
                             key={social.label}
@@ -61,13 +60,13 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* Column 3: Massive LET'S TALK */}
-                <div className="lg:col-span-5 flex items-center justify-center p-12 lg:p-20 bg-[#080808] relative overflow-hidden group">
+                <div className="lg:col-span-5 flex items-center justify-center p-12 lg:p-20 bg-[#1F2B2D] relative overflow-hidden group">
                     <motion.div
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: "spring", stiffness: 300 }}
                         className="relative z-10 text-center"
                     >
-                        <h2 className="text-6xl lg:text-7xl font-display leading-none tracking-tighter text-[#C1FF00] group-hover:italic transition-all duration-500">
+                        <h2 className="text-6xl lg:text-7xl font-display leading-none tracking-tighter text-[#12B2C1] group-hover:italic transition-all duration-500">
                             LET'S TALK
                         </h2>
                     </motion.div>
@@ -77,7 +76,7 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Bottom Strip */}
-            <div className="border-t border-white/10 p-8 flex flex-col md:flex-row justify-between items-center gap-8 bg-black">
+            <div className="border-t border-white/10 p-8 flex flex-col md:flex-row justify-between items-center gap-8 bg-navy">
                 <p className="font-mono text-[10px] tracking-widest text-white/40 uppercase">
                     © 2024 | All rights reserved by GS Tech Solutions
                 </p>

@@ -4,10 +4,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-orange: #FF4D00;
-  --color-navy: #0A0F1E;
-  --color-cream: #FAFAF7;
-  --color-mid: #6B7280;
+  --color-orange: #12B2C1;
+  --color-navy: #1F2B2D;
+  --color-cream: #E5F9F8;
+  --color-mid: #23717B;
   --font-display: "Bebas Neue", sans-serif;
   --font-sans: "Plus Jakarta Sans", sans-serif;
   --font-mono: "Space Mono", monospace;
@@ -21,9 +21,31 @@
     box-sizing: border-box;
   }
 
-  html {
+  html,
+  body,
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  * {
     scroll-behavior: smooth;
-    background-color: #0A0F1E;
+    cursor: none !important;
+    /* Force hide default cursor globally */
+  }
+
+  /* Show default cursor on touch devices and small screens */
+  @media (pointer: coarse),
+  (max-width: 1024px) {
+
+    html,
+    body {
+      cursor: auto !important;
+    }
+  }
+
+  html {
+    background-color: #1F2B2D;
   }
 
   body {
@@ -91,7 +113,7 @@
 
   /* Gradient Text */
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-br from-orange to-[#FF9500];
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-orange to-[#0D8A9E];
   }
 }
 
@@ -101,11 +123,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0A0F1E;
+  background: #1F2B2D;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FF4D00;
+  background: #12B2C1;
   border-radius: 10px;
 }
 

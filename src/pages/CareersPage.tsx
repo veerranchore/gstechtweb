@@ -26,7 +26,7 @@ const CareersPage: React.FC = () => {
             {/* ── HERO: THE VISION ── */}
             <section className="min-h-[75vh] flex flex-col justify-center pt-40 pb-20 px-6 relative overflow-hidden border-b border-white/5">
                 <div className="absolute inset-0 opacity-[0.05] pointer-events-none"
-                    style={{ backgroundImage: 'radial-gradient(#FF4D00 1px, transparent 1px)', backgroundSize: '50px 50px' }} />
+                    style={{ backgroundImage: 'radial-gradient(#12B2C1 1px, transparent 1px)', backgroundSize: '50px 50px' }} />
 
                 <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-end">
                     <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
@@ -56,7 +56,7 @@ const CareersPage: React.FC = () => {
             </section>
 
             {/* ── VALUES ── */}
-            <section className="py-24 lg:py-40 px-6 bg-[#FAFAF7] text-navy lg:rounded-[5rem] mx-0 lg:mx-6 my-16 relative z-10 shadow-2xl overflow-hidden">
+            <section className="py-24 lg:py-40 px-6 bg-[#E5F9F8] text-navy lg:rounded-[5rem] mx-0 lg:mx-6 my-16 relative z-10 shadow-2xl overflow-hidden">
                 <div className="max-w-[1400px] mx-auto">
                     <div className="mb-20 space-y-4">
                         <span className="font-mono text-orange text-[10px] tracking-[0.6em] font-black uppercase">Benefits</span>

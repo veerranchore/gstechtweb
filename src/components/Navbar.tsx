@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
             >
                 <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
                     <Link to="/" className="flex items-center gap-2.5 group relative z-[110]">
-                        <div className="bg-white p-1.5 rounded flex items-center justify-center shadow-sm">
+                        <div className="flex items-center justify-center bg-white p-2 rounded shadow-sm">
                             <img
                                 src="/GS TECHT LOGO.png"
                                 alt="GS TECHT LOGO"
