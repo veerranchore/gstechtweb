@@ -14,4 +14,13 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  optimizeDeps: {
+    exclude: ['3D-Earth-main'],
+    entries: ['index.html', 'src/**/*.{ts,tsx}'],
+  },
+  server: {
+    watch: {
+      ignored: ['**/3D-Earth-main/**'],
+    },
+  },
 })

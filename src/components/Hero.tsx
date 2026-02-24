@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Earth3D from './Earth3D';
 
 const stats = [
     { number: '500+', label: 'Projects Shipped' },
@@ -69,44 +70,15 @@ const Hero: React.FC = () => {
                         </motion.div>
                     </div>
 
-                    {/* Right: floating card */}
+                    {/* Right: 3D Earth */}
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.7, delay: 0.4 }}
                         className="lg:col-span-4 flex justify-center lg:justify-end"
                     >
-                        <div className="relative">
-                            {/* Main card */}
-                            <div className="card-dark p-8 w-64">
-                                <div className="w-12 h-12 rounded-xl bg-[#12B2C1] flex items-center justify-center mb-6">
-                                    <span className="material-symbols-outlined text-white">rocket_launch</span>
-                                </div>
-                                <p className="font-display text-5xl text-white mb-1">500+</p>
-                                <p className="text-slate-400 text-sm font-medium">Products launched successfully</p>
-                                <div className="mt-6 flex gap-2">
-                                    {['iOS', 'Android', 'Web'].map(p => (
-                                        <span key={p} className="px-2.5 py-1 rounded-full text-[10px] font-bold bg-white/10 text-white/70">{p}</span>
-                                    ))}
-                                </div>
-                            </div>
-
-                            {/* Floating badge 1 */}
-                            <div className="float-badge absolute -top-6 -right-6 card-light p-3 text-center shadow-xl rounded-xl">
-                                <p className="font-display text-3xl text-[#12B2C1]">14+</p>
-                                <p className="font-mono-custom text-[10px] text-[#23717B]">Years</p>
-                            </div>
-
-                            {/* Floating badge 2 */}
-                            <div className="absolute -bottom-6 -left-6 card-light p-3 flex items-center gap-2 shadow-xl rounded-xl" style={{ animationDelay: '2s' }}>
-                                <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
-                                    <span className="material-symbols-outlined text-green-600 text-base">verified</span>
-                                </div>
-                                <div>
-                                    <p className="text-[11px] font-bold text-[#1F2B2D]">99.9% Uptime</p>
-                                    <p className="font-mono-custom text-[9px] text-[#23717B]">SLA guaranteed</p>
-                                </div>
-                            </div>
+                        <div className="relative w-96 h-96 rounded-2xl overflow-hidden shadow-2xl">
+                            <Earth3D />
                         </div>
                     </motion.div>
                 </div>

@@ -51,12 +51,7 @@ const Services: React.FC = () => {
         <section id="services" className="bg-[#E5F9F8] py-32">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-20"
-                >
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-20">
                     <div>
                         <div className="flex items-center gap-3 mb-4">
                             <span className="orange-line"></span>
@@ -69,17 +64,13 @@ const Services: React.FC = () => {
                     <p className="text-[#23717B] text-base leading-relaxed max-w-xs">
                         Everything your digital product needs — from idea to massive scale — under one roof.
                     </p>
-                </motion.div>
+                </div>
 
                 {/* Service rows */}
                 <div className="divide-y divide-black/8">
                     {services.map((svc, i) => (
-                        <motion.div
+                        <div
                             key={svc.num}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: i * 0.07 }}
                             className="group py-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-center cursor-pointer hover:pl-4 transition-all duration-300"
                         >
                             {/* Number */}
@@ -112,7 +103,7 @@ const Services: React.FC = () => {
                                     arrow_outward
                                 </span>
                             </div>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import ServicesList from '@/components/ServicesList';
-import TestimonialQuote from '@/components/TestimonialQuote';
 import RollReveal from '@/components/RollReveal';
+import Earth3D from '@/components/Earth3D';
 
 
 const HomePage: React.FC = () => {
@@ -15,7 +14,7 @@ const HomePage: React.FC = () => {
     return (
         <div className="bg-navy overflow-hidden">
             {/* ── HERO SECTION ── */}
-            <section className="relative min-h-[95vh] flex items-center px-6 pt-24 pb-20 overflow-hidden">
+            <section className="relative min-h-[95vh] flex items-center px-6 pt-24 pb-20 overflow-hidden bg-black">
                 {/* Decorative background element */}
                 <div className="absolute -top-[10%] -right-[10%] w-[600px] h-[600px] bg-orange/5 rounded-full blur-[120px] pointer-events-none" />
                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent" />
@@ -49,62 +48,16 @@ const HomePage: React.FC = () => {
                             </motion.div>
                         </div>
 
-                        {/* Image Mosaic - 4 Images Grid */}
-                        <div className="relative h-[500px] lg:h-[600px] w-full order-1 lg:order-2 perspective-1000">
-                            {/* Image 1: Top Left - Starts from Center-ish (Right/Down) */}
-                            <motion.div
-                                initial={{ opacity: 0, x: 150, y: 100, rotate: 15, scale: 0.5 }}
-                                animate={{ opacity: 1, x: 0, y: 0, rotate: -6, scale: 1 }}
-                                transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-                                className="absolute top-[10%] left-[5%] w-[40%] aspect-[3/4] z-30 shadow-2xl rounded-2xl overflow-hidden border border-white/20"
-                            >
-                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600" className="w-full h-full object-cover" alt="Creative Director" />
-                            </motion.div>
-
-                            {/* Image 2: Top Right - Starts from Center-ish (Left/Down) */}
-                            <motion.div
-                                initial={{ opacity: 0, x: -150, y: 100, rotate: -15, scale: 0.5 }}
-                                animate={{ opacity: 1, x: 0, y: 0, rotate: 6, scale: 1 }}
-                                transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-                                className="absolute top-[5%] right-[10%] w-[35%] aspect-square z-20 shadow-xl rounded-2xl overflow-hidden border border-white/10 opacity-80 mix-blend-lighten"
-                            >
-                                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600" className="w-full h-full object-cover grayscale" alt="Team Collaboration" />
-                            </motion.div>
-
-                            {/* Image 3: Bottom Left - Starts from Center-ish (Right/Up) */}
-                            <motion.div
-                                initial={{ opacity: 0, x: 150, y: -100, rotate: -15, scale: 0.5 }}
-                                animate={{ opacity: 1, x: 0, y: 0, rotate: 3, scale: 1 }}
-                                transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-                                className="absolute bottom-[15%] left-[15%] w-[35%] aspect-video z-10 shadow-lg rounded-2xl overflow-hidden border border-white/5 opacity-60"
-                            >
-                                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=600" className="w-full h-full object-cover" alt="Modern Workspace" />
-                            </motion.div>
-
-                            {/* Image 4: Bottom Right - Starts from Center-ish (Left/Up) */}
-                            <motion.div
-                                initial={{ opacity: 0, x: -150, y: -100, rotate: 15, scale: 0.5 }}
-                                animate={{ opacity: 1, x: 0, y: 0, rotate: -3, scale: 1 }}
-                                transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
-                                className="absolute bottom-[5%] right-[5%] w-[45%] aspect-[4/5] z-40 shadow-2xl rounded-2xl overflow-hidden border border-white/20"
-                            >
-                                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=600" className="w-full h-full object-cover sepia-[.2]" alt="Strategy Meeting" />
-                            </motion.div>
-
-                            {/* Connecting Lines/Decorations */}
-                            <motion.div
-                                initial={{ opacity: 0, scale: 0 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                transition={{ duration: 1.5, delay: 0.5 }}
-                                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] border border-white/5 rounded-full z-0"
-                            />
+                        {/* 3D Earth - Replace Image Mosaic */}
+                        <div className="relative h-[500px] lg:h-[600px] w-full order-1 lg:order-2">
+                            <Earth3D />
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* ── SECTION DIFFERENCE 1: THE MARQUEE ── */}
-            <RollReveal className="py-10 bg-white overflow-hidden relative z-20 shadow-2xl">
+            <div className="py-10 bg-white overflow-hidden relative z-20 shadow-2xl">
                 <div className="flex whitespace-nowrap">
                     <div className="flex animate-marquee items-center gap-12 lg:gap-24">
                         {['MOBILE ARCHITECTURE', 'SAAS DESIGN', 'AI INTEGRATION', 'BRAND STRATEGY', 'CLOUD OPS', 'UI ENGINEERING'].map((item) => (
@@ -124,7 +77,7 @@ const HomePage: React.FC = () => {
                         ))}
                     </div>
                 </div>
-            </RollReveal>
+            </div>
 
             {/* ── SECTION DIFFERENCE 2: THE BRUTALIST STATEMENT ── */}
             <section className="py-24 lg:py-32 px-6 bg-navy relative overflow-hidden border-b border-white/5">
@@ -146,15 +99,8 @@ const HomePage: React.FC = () => {
                     </RollReveal>
                 </div>
             </section>
-
-            {/* ── NEW SECTION: SERVICES LIST ── */}
-            <ServicesList />
-
-            {/* ── NEW SECTION: TESTIMONIAL QUOTE ── */}
-            <TestimonialQuote />
-
             {/* ── SECTION DIFFERENCE 3: THE BENTO GRID (CLEAN WHITE) ── */}
-            <RollReveal className="py-16 lg:py-24 px-6 bg-cream text-navy lg:rounded-[5rem] mx-0 lg:mx-4 my-10 relative z-20 shadow-[0_-20px_50px_rgba(0,0,0,0.1)]">
+            <div className="py-16 lg:py-24 px-6 bg-cream text-navy lg:rounded-[5rem] mx-0 lg:mx-4 my-10 relative z-20 shadow-[0_-20px_50px_rgba(0,0,0,0.1)]">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12 gap-8">
                         <div className="space-y-2">
@@ -187,7 +133,7 @@ const HomePage: React.FC = () => {
                         ))}
                     </div>
                 </div>
-            </RollReveal>
+            </div>
 
         </div >
     );

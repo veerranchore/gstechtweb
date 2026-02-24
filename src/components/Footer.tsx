@@ -61,15 +61,11 @@ const Footer: React.FC = () => {
 
                 {/* Column 3: Massive LET'S TALK */}
                 <div className="lg:col-span-5 flex items-center justify-center p-12 lg:p-20 bg-[#1F2B2D] relative overflow-hidden group">
-                    <motion.div
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ type: "spring", stiffness: 300 }}
-                        className="relative z-10 text-center"
-                    >
+                    <div className="relative z-10 text-center">
                         <h2 className="text-6xl lg:text-7xl font-display leading-none tracking-tighter text-[#12B2C1] group-hover:italic transition-all duration-500">
                             LET'S TALK
                         </h2>
-                    </motion.div>
+                    </div>
                     {/* Background decoration for the talk section */}
                     <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(white 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
                 </div>
