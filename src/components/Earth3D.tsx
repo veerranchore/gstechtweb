@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 // ─── Starfield helper (inline — avoids legacy path issues) ──────────────────
-function createStarfield(numStars = 5000): THREE.Points {
+function createStarfield(numStars = 5000): any {
   const verts: number[] = [];
   const colors: number[] = [];
 
@@ -37,7 +37,7 @@ function createStarfield(numStars = 5000): THREE.Points {
 }
 
 // ─── Fresnel glow helper (inline) ───────────────────────────────────────────
-function createFresnelMat(rimHex = 0x3abef9, facingHex = 0x000000): THREE.ShaderMaterial {
+function createFresnelMat(rimHex = 0x3abef9, facingHex = 0x000000): any {
   return new THREE.ShaderMaterial({
     uniforms: {
       color1: { value: new THREE.Color(rimHex) },

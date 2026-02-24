@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 const services = [
     {
@@ -68,7 +67,7 @@ const Services: React.FC = () => {
 
                 {/* Service rows */}
                 <div className="divide-y divide-black/8">
-                    {services.map((svc, i) => (
+                    {services.map((svc) => (
                         <div
                             key={svc.num}
                             className="group py-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-center cursor-pointer hover:pl-4 transition-all duration-300"
