@@ -17,9 +17,6 @@ const jobs = [
 
 const CareersPage: React.FC = () => {
     const [selected, setSelected] = useState<typeof jobs[0] | null>(null);
-    const [activeCat, setActiveCat] = useState('All');
-
-    const filteredJobs = activeCat === 'All' ? jobs : jobs.filter(j => j.cat === activeCat);
 
     return (
         <div className="bg-navy text-white overflow-hidden">
@@ -82,52 +79,6 @@ const CareersPage: React.FC = () => {
                     </div>
                 </div>
             </section>
-
-            {/* ── JOB BOARD ── */}
-            {/* <section className="py-24 lg:py-32 px-6 bg-navy relative border-b border-white/5">
-                <div className="max-w-7xl mx-auto">
-                    <div className="flex flex-col lg:flex-row justify-between items-center mb-20 gap-10">
-                        <div className="space-y-4">
-                            <h2 className="text-5xl lg:text-7xl font-display leading-none tracking-tighter uppercase">OPEN NODES.</h2>
-                            <p className="text-white/40 font-mono text-[9px] tracking-[0.4em]">FILTER BY SPECIALIZATION</p>
-                        </div>
-                        <div className="flex gap-2">
-                            {['All', 'Engineering', 'Design'].map(cat => (
-                                <button key={cat} onClick={() => setActiveCat(cat)}
-                                    className={`px-6 py-2 rounded-full font-mono text-[9px] tracking-widest uppercase transition-all ${activeCat === cat ? 'bg-orange text-white' : 'bg-white/5 text-white/30 hover:text-white border border-white/5'}`}>
-                                    {cat}
-                                </button>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div className="space-y-4">
-                        {filteredJobs.map((job) => (
-                            <motion.div
-                                key={job.id}
-                                layout
-                                onClick={() => setSelected(job)}
-                                className="group p-8 lg:p-10 bg-white/5 border border-white/5 rounded-[2.5rem] flex flex-col lg:flex-row justify-between items-center gap-10 hover:bg-white/10 transition-all cursor-pointer relative overflow-hidden"
-                            >
-                                <div className="flex-1 space-y-4">
-                                    <div className="flex items-center gap-6">
-                                        <span className="font-mono text-[9px] text-orange tracking-[0.6em] font-black uppercase italic">[{job.cat}]</span>
-                                        <span className="w-1 h-1 rounded-full bg-white/20" />
-                                        <span className="font-mono text-[9px] text-white/40 tracking-[0.4em] uppercase">{job.location}</span>
-                                    </div>
-                                    <h3 className="text-3xl lg:text-5xl font-display leading-none tracking-tight group-hover:italic transition-all uppercase">{job.title}</h3>
-                                </div>
-                                <div className="flex items-center gap-8">
-                                    <span className="px-5 py-1 border border-white/10 rounded-full font-mono text-[9px] tracking-widest text-white/30 uppercase">{job.type}</span>
-                                    <div className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-navy transition-all">
-                                        <span className="material-symbols-outlined text-xl">east</span>
-                                    </div>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </section> */}
 
             {/* ── MODAL ── */}
             <AnimatePresence>
