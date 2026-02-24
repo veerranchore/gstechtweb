@@ -26,9 +26,9 @@ const Hero: React.FC = () => {
                             className="flex items-center gap-3 mb-8"
                         >
                             <span className="orange-line"></span>
-                            <span className="font-mono-custom text-xs text-[#12B2C1] tracking-widest uppercase">
+                            {/* <span className="font-mono-custom text-xs text-[#12B2C1] tracking-widest uppercase">
                                 Digital Product Studio
-                            </span>
+                            </span> */}
                         </motion.div>
 
                         <motion.h1

@@ -35,7 +35,7 @@ const CareersPage: React.FC = () => {
                             <span className="font-mono text-[10px] text-orange tracking-[0.6em] uppercase font-black italic">Careers / Talent Node</span>
                         </div>
                         <h1 className="text-[clamp(2.5rem,7vw,5rem)] leading-[0.95] tracking-tighter uppercase font-display mb-12">
-                            Build The <span className="italic text-white underline decoration-orange/20 decoration-8 underline-offset-8">Future</span> Of Engineering.
+                            Build The <span className="italic text-orange">Future of</span> Engineering.
                         </h1>
                         <p className="text-white/40 text-lg lg:text-xl max-w-xl font-light italic border-l border-white/10 pl-8 leading-relaxed">
                             "We are looking for architects, not just builders. Join a studio that values the craft of code."

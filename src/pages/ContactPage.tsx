@@ -53,7 +53,7 @@ const ContactPage: React.FC = () => {
                         </div>
 
                         <h1 className="text-[clamp(2.5rem,7.5vw,5rem)] leading-[0.9] mb-12 tracking-tighter uppercase font-display">
-                            Initiate <span className="italic text-white underline decoration-orange/20 decoration-8 underline-offset-8">Transmission.</span>
+                            Initiate <span className="italic text-orange">Transmission.</span>
                         </h1>
                         <p className="text-white/40 text-lg lg:text-xl max-w-xl leading-relaxed font-light italic border-l border-white/10 pl-8">
                             "Ready to transform your technical architecture? We respond to all inquiries within 24 hours."

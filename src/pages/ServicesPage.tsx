@@ -25,7 +25,7 @@ const ServicesPage: React.FC = () => {
                         </div>
 
                         <h1 className="text-[clamp(2.5rem,7vw,5rem)] leading-[0.95] tracking-tighter uppercase font-display mb-12">
-                            Precision <span className="italic text-white underline decoration-orange/20 decoration-8 underline-offset-8">Directives.</span>
+                            Precision <span className="italic text-orange">Directives.</span>
                         </h1>
                         <p className="text-white/40 text-lg lg:text-xl max-w-xl leading-relaxed font-light italic border-l border-white/10 pl-8">
                             "We provide full-cycle digital development, from high-fidelity prototypes to enterprise-grade cloud deployments."
@@ -41,8 +41,8 @@ const ServicesPage: React.FC = () => {
                         <div className="aspect-square w-full rounded-[4rem] overflow-hidden border border-white/10 relative group">
                             <div className="absolute inset-0 bg-navy/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
                             <img
-                                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200"
-                                alt="Services Command Center"
+                                src="https://images.unsplash.com/photo-1601972599720-36938d4ecd31?auto=format&fit=crop&q=80&w=1200"
+                                alt="Modern App Development"
                                 className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700 ease-out"
                             />
                             <div className="absolute bottom-10 right-10 z-20 bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 rounded-full">

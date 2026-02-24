@@ -28,10 +28,6 @@ const HomePage: React.FC = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8, ease: "easeOut" }}
                             >
-                                <div className="flex items-center gap-4 mb-8">
-                                    <span className="w-12 h-px bg-orange"></span>
-                                    <span className="font-mono text-[10px] text-orange tracking-[0.5em] uppercase font-bold">GS TECH SOLUTIONS / STUDIO 25</span>
-                                </div>
 
                                 <h1 className="text-[clamp(2.5rem,5vw,5rem)] leading-[0.95] mb-10 tracking-tighter uppercase font-display">
                                     Engineering <span className="italic text-white underline decoration-orange/20 underline-offset-8">Precision</span> Interfaces.
@@ -87,10 +83,10 @@ const HomePage: React.FC = () => {
                 </motion.div>
 
                 <div className="max-w-7xl mx-auto relative z-10">
-                    <RollReveal className="max-w-3xl">
-                        <span className="font-mono text-[10px] text-orange tracking-[0.5em] font-bold uppercase mb-8 block">Statement.</span>
+                    <RollReveal className="">
+                        <span className="font-mono text-[10px] text-orange tracking-[0.5em] font-bold uppercase mb-8">Statement.</span>
                         <h2 className="text-[clamp(2.2rem,4vw,4rem)] font-display leading-[1.1] mb-12 uppercase italic tracking-tighter">
-                            We don't build websites. We build <span className="text-white underline decoration-orange/40 underline-offset-4">Digital Ecosystems</span> that drive revenue and define cultures.
+                            We don't build websites. We build <span className="text-orange whitespace-nowrap">Digital Ecosystems</span> that drive revenue and define cultures.
                         </h2>
                         <Link to="/about" className="group inline-flex items-center gap-6 text-white py-4 border-b border-white/10 hover:border-orange transition-all font-display text-xl uppercase tracking-widest italic">
                             Read Our Manifesto

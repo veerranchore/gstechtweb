@@ -26,13 +26,13 @@ const AboutPage: React.FC = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="flex items-center gap-6 mb-12">
+                        {/* <div className="flex items-center gap-6 mb-12">
                             <span className="w-16 h-px bg-orange"></span>
                             <span className="font-mono text-[10px] text-orange tracking-[0.5em] uppercase font-bold text-shadow">Institutional Archive</span>
-                        </div>
+                        </div> */}
 
                         <h1 className="text-[clamp(2.5rem,7vw,5rem)] leading-[0.95] mb-12 tracking-tighter uppercase font-display">
-                            We Engineer <span className="italic text-white opacity-90 underline decoration-orange/20 decoration-4 italic">High-Performance</span> Legacies.
+                            We Engineer <span className="italic text-orange decoration-orange/20 decoration-4 italic">High-Performance</span> &nbsp; Legacies.
                         </h1>
 
                         <div className="max-w-xl border-l border-white/10 pl-10">
