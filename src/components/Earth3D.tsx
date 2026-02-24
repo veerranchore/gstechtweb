@@ -110,6 +110,10 @@ const Earth3D = () => {
     controls.maxDistance = 10;
     controls.autoRotate = false;
 
+    // Disable zoom on mobile/responsive devices (width < 768px)
+    const isMobile = window.innerWidth < 768;
+    controls.enableZoom = !isMobile;
+
     // ── Earth group (tilted 23.4° like the real planet) ──
     const earthGroup = new THREE.Group();
     earthGroup.rotation.z = (-23.4 * Math.PI) / 180;
@@ -183,6 +187,9 @@ const Earth3D = () => {
       camera.aspect = w / h;
       camera.updateProjectionMatrix();
       renderer.setSize(w, h);
+
+      // Dynamically update zoom on resize
+      controls.enableZoom = w >= 768;
     };
     window.addEventListener('resize', onResize);
 
