@@ -84,7 +84,7 @@ const CareersPage: React.FC = () => {
             </section>
 
             {/* ── JOB BOARD ── */}
-            <section className="py-24 lg:py-32 px-6 bg-navy relative border-b border-white/5">
+            {/* <section className="py-24 lg:py-32 px-6 bg-navy relative border-b border-white/5">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex flex-col lg:flex-row justify-between items-center mb-20 gap-10">
                         <div className="space-y-4">
@@ -127,7 +127,7 @@ const CareersPage: React.FC = () => {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ── MODAL ── */}
             <AnimatePresence>

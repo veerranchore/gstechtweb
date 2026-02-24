@@ -30,7 +30,7 @@ const HomePage: React.FC = () => {
                             >
 
                                 <h1 className="text-[clamp(2.5rem,5vw,5rem)] leading-[0.95] mb-10 tracking-tighter uppercase font-display">
-                                    Engineering <span className="italic text-white underline decoration-orange/20 underline-offset-8">Precision</span> Interfaces.
+                                    Engineering <span className="italic text-orange">Precision</span> Interfaces.
                                 </h1>
 
                                 <div className="max-w-md space-y-10">
